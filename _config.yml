@@ -1,0 +1,109 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 博林空间
+subtitle: 博林记录
+description:
+keywords:
+author: Moxin
+language: 
+timezone: 
+favicon: https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicon.ico
+avatar: https://avatars3.githubusercontent.com/u/38900836?s=460&v=4 #字段：avatar（作者头像，会出现在文章标题下方，不同于侧边栏的大头像）
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://xianlongku.gitee.io/blogcode
+root: /blogcode/
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render: customhtml/**
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+  
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+  
+# Category & Tag
+default_category: uncategorized
+category_map:
+  收录: collection
+  笔记: note
+  工具: toolbox
+  生活: life
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: material-x
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+- type: git
+  repo: https://gitee.com/xianlongku/xianlongku.git
+  branch: master
+- type: git
+  repo: git@github.com:xianlongku/xianlongku.github.io.git
+  branch: master
+
+leancloud:
+   app_id: gvxSWiIyBQnvVy6M2XSqqort-gzGzoHsz
+   app_key: 3DcJS9t0L8yo73iUwNJukrFC
+
+# hexo-admin authentification
+admin:
+  username: bolin
+  password_hash: $2a$10$8DJNU6TrZp7yDCZtNRmi/e70E3vbtZPyjFQVtCCWaKSPVG.JQz0.C
+  secret: MIma7758
+metadata:
+  author_id: yunshangfeng
+  language:
+
+
+custom:
+  "movie": /customhtml/movie/index.html
