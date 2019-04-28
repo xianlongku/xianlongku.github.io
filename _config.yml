@@ -15,8 +15,8 @@ avatar: https://avatars3.githubusercontent.com/u/38900836?s=460&v=4 #字段：av
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: https://xianlongku.gitee.io/blogcode
-root: /blogcode/
+url: /
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
